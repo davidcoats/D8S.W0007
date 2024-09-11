@@ -1,0 +1,117 @@
+﻿
+<PageTitle>@Instances.PageTitles.For_Location</PageTitle>
+
+<Container>
+    <div class="relative isolate bg-gray-900 px-6 py-48 lg:py-32 rounded">
+        <div class="lg:mx-72 absolute -z-10 inset-0">
+            <img src="@Instances.Urls.Image_ForLocation_Banner" alt="" class="h-full w-full object-cover object-[50%_75%]">
+        </div>
+
+        <div class="max-w-lg pl-12">
+            <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Location</h2>
+        </div>
+    </div>
+
+    <div class="mt-6 lg:mt-12">
+        <p class="text-3xl font-bold tracking-tight text-gray-900">Jaipur</p>
+    </div>
+
+    <div class="mt-8">
+        <h2 class="text-xl text-gray-900">Getting There</h2>
+        <p class="mt-2 font-light">
+            Jaipur is readily accessible from the <span class="text-bold">Jaipur International Airport</span>, which has nonstop flights from most major cities.
+            From Jaipur airport, the trip to the hotel is a 45-minute shuttle drive.
+        </p>
+        <p class="mt-6 font-light">
+            We recommend arriving by the <span class="font-normal">afternoon of Tuesday</span> February 11th, 2025 and departing <span class="font-normal">Thursday</span>, February 13th, 2025.
+        </p>
+        <p class="mt-6 font-light">
+            We will arrange transportation between the airport and the hotel venue.
+        </p>
+        <p class="mt-6 font-light">
+            Jaipur is a gorgeous area and is well suited for enjoying a longer stay, with opportunities to visit the premiere cultural sights of Rajasthan including palaces, forts, markets and temples.
+            If you are considering arriving a few days early or staying a few days after, we are happy to provide advice for exploring the area.
+        </p>
+    </div>
+
+    <div class="mt-8">
+        <h2 class="text-xl text-gray-900">Wedding Venue Hotel</h2>
+
+        <p class="mt-2 font-light">
+            We have reserved rooms for all guests.
+        </p>
+
+        <div>
+            <div class="mt-6 relative isolate overflow-hidden bg-gray-900 py-24 lg:py-48 rounded">
+                <img src="@Instances.Urls.Image_ForLocation_Venue" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+            </div>
+            <p class="mt-2 font-light">
+                The Palace By Park Jewels Hotels And Resorts
+                <br />
+                <a href="http://www.thepalacejaipur.com/" class="text-blue-900 font-semibold tracking-tight">http://www.thepalacejaipur.com/</a>
+                <br />
+                +91 141 665 5555
+            </p>
+        </div>
+        
+        <p class="mt-6 font-light">
+            Our wedding venue is situated on the road to Ajmer, a 40 minute drive from the Jaipur International Airport.
+            <br />
+            Some fun places to explore:
+            <ol class="mt-2">
+                <li>Hawa Mahal (40 minutes)</li>
+                <li>Hanuman Temp (1 hour)</li>
+                <li>Amber Palace (1 hour)</li>
+            </ol>
+        </p>
+    </div>
+
+    
+    <div class="max-w-[640px] mt-8 mb-16 overflow-hidden rounded-lg bg-gray-50">
+        <style>
+          .google-maps {
+            position: relative;
+            height: 0;
+            overflow: hidden;
+          }
+          .google-maps iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+          }
+        </style>
+        <div class="px-4 py-5 sm:p-6">
+            <div class="google-maps pb-[150%] lg:pb-[75%]">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1KboS5ntSrMlN2SyBV7sTGyBhWTDVExo&ll=26.890212933670966%2C75.82856807095492&z=10" width="640" height="480" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-16 pb-6">
+        <div class="relative">
+            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                <div class="w-full border-t border-gray-300"></div>
+            </div>
+            <div class="relative flex justify-center">
+                <span class="bg-white px-2 text-sm text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="mx-auto size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                    </svg>
+                    Romance
+                </span>
+            </div>
+        </div>
+    </div>
+</Container>
+
+
+@code{
+    /// <summary>
+    /// Documentation will not appear for this component in consumer Razor files unless there is some sort of documentation in the Razor markup.
+    /// Documentation for the component is in the code-behind file.
+    /// </summary>
+    [Parameter]
+    public string DummyDocumentationParameter { get; set; }
+}

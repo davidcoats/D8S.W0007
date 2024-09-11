@@ -1,0 +1,26 @@
+{
+  "name": "d8s.w0007",
+  "version": "1.0.0",
+  "description": "Website for Riya and Vedu's wedding.",
+  "main": "index.js",
+  "scripts": {
+    "tailwindcss": "npx tailwindcss -i ./source/css/tailwind.css -o ./wwwroot/css-out/tailwind.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidcoats/D8S.W0007.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "David Coats",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidcoats/D8S.W0007/issues"
+  },
+  "homepage": "https://github.com/davidcoats/D8S.W0007#readme",
+  "dependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}

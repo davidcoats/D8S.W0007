@@ -1,0 +1,67 @@
+
+<PageTitle>@Instances.PageTitles.For_Schedule</PageTitle>
+
+<Container>
+    <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-48 rounded">
+        <img src="@Instances.Urls.Image_Jaipur_ForSchedule" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+
+        <div class="max-w-lg pl-12">
+            <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Schedule</h2>
+        </div>
+    </div>
+
+    <div class="font-light">
+        <p class="mt-6 mb-8">
+            We recommend arriving by the <span class="font-normal">afternoon of Tuesday</span>, February 11th, 2025, and departing <span class="font-normal">Thursday</span>, February 13th, 2025.
+        </p>
+        <p class="mt-6 mb-8">
+            Our wedding events will take place Tuesday, February 11th and Wednesday, February 12th.
+        </p>
+        <p class="mt-6 mb-8">
+            We will arrange transportation from the airport to the hotel venue on Tuesday morning, and back to the airport on Thursday afternoon.
+        </p>
+@*         <p class="mt-6 mb-8">
+            <ul>
+                <li>
+                    <a href="#Tuesday" class="underline sky-400">Tuesday, February 11th - Welcome Lunch and Sangeet</a>
+                </li>
+                <li>
+                    <a href="#Wednesday" class="underline sky-400">Wednesday, February 12th - Haldi, Baraat and Wedding</a>
+                </li>
+                <li>
+                    <a href="#Thursday" class="underline sky-400">Thursday, February 13th - Farewell</a>
+                </li>
+            </ul>
+        </p> *@
+    </div>
+
+    <div>
+        @* Info element. *@
+        <ScheduleThreeRowSection />
+    </div>
+
+    <div class="pt-16 pb-6">
+        <div class="relative">
+            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                <div class="w-full border-t border-gray-300"></div>
+            </div>
+            <div class="relative flex justify-center">
+                <span class="bg-white px-2 text-sm text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="mx-auto size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                    </svg>
+                    Friendship
+                </span>
+            </div>
+        </div>
+    </div>
+</Container>
+
+@code{
+    /// <summary>
+    /// Documentation will not appear for this component in consumer Razor files unless there is some sort of documentation in the Razor markup.
+    /// Documentation for the component is in the code-behind file.
+    /// </summary>
+    [Parameter]
+    public string DummyDocumentationParameter { get; set; }
+}

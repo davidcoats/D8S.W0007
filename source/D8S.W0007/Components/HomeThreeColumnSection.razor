@@ -1,0 +1,75 @@
+﻿
+
+
+<div class="mt-16 mb-16 mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div class="flex flex-col items-start">
+            <a href="our-story">
+                <div class="relative w-full">
+                    <img src="@Instances.Urls.Image_ForMainPage_OurStory" alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+                    <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+                </div>
+            </a>
+            <div class="max-w-xl">
+                <div class="group relative">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="our-story">Our Story →</a>
+                    </h3>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                        Riya is from Bombay, Vedant is from Calcutta. Find out how "Hello" turned into a lifetime.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-start">
+            <a href="schedule">
+                <div class="relative w-full">
+                    <img src="@Instances.Urls.Image_ForHomeCelebration" alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+                    <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+                </div>
+            </a>
+            <div class="max-w-xl">
+                <div class="group relative">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="schedule">Schedule →</a>
+                    </h3>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                        Please arrive by the afternoon of <span class="font-semibold">Tuesday, February 11th</span> and depart on <span class="font-semibold">Thursday, February 13th</span>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-start">
+            <a href="location">
+                <div class="relative w-full">
+                    <img src="@Instances.Urls.Image_ForMainPage_Location" alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+                    <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+                </div>
+            </a>
+            <div class="max-w-xl">
+                <div class="group relative">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="location">Location →</a>
+                    </h3>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                        Join us in <span class="font-semibold">Jaipur</span>.
+                        We will have rooms for all guests, and all events will be at the hotel.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@code{
+    /// <summary>
+    /// Documentation will not appear for this component in consumer Razor files unless there is some sort of documentation in the Razor markup.
+    /// Documentation for the component is in the code-behind file.
+    /// </summary>
+    [Parameter]
+    public string DummyDocumentationParameter { get; set; }
+}

@@ -1,0 +1,59 @@
+﻿
+@using D8S.W0007.R000.Components
+
+<PageTitle>@Instances.PageTitles.For_Home</PageTitle>
+
+<HeadContent>
+    <meta property="og:title" content="Riya and Vedant" />
+    <meta property="og:description" content="Jaipur, February 11th, 2025" />
+    <meta property="og:type" content="Riya and Vedant-Shaadi" />
+    <meta property="og:image" content="@Instances.Urls.Image_ForOpenGraph" />
+    <meta property="og:url" content="www.riya-and-vedant.com" />
+</HeadContent>
+
+
+<Container>
+    <div class="mx-auto max-w-7xl">
+        <div class="relative">
+            <img class="aspect-[3/2] w-full bg-gray-50 object-cover rounded-xl"
+                 src="@Instances.Urls.Image_ForMainPage_Main" alt="">
+        </div>
+    </div>
+
+    <div class="mt-8 lg:mt-12 mx-auto max-w-2xl text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold tracking-tight text-gray-900">Riya and Vedant are getting married!</h2>
+        <div class="mt-4 lg:mt-6 text-lg lg:text-normal leading-8 text-gray-600 font-light">
+            <p>Come celebrate with us in <span class="font-normal">Jaipur</span>, India.</p>
+            <p class="mt-2 lg:mt-2">
+                Our program of events starts Tuesday <span class="font-normal">February 11th</span> 2025,
+                <br />
+                with the wedding on the night of Wednesday <span class="font-normal">February 12th</span>.
+            </p>
+        </div>
+    </div>
+
+    <div class="mt-6 lg:mt-8 text-center">
+        <p class="text-lg lg:text-normal tracking-tight text-gray-600">Even if you cannot attend, please <a href="rsvp" class="text-blue-900 underline">RSVP →</a></p>
+    </div>
+
+    @* Info element. *@
+    <div>
+        <HomeThreeColumnSection />
+    </div>
+
+    <div class="pt-16 pb-6">
+        <div class="relative">
+            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                <div class="w-full border-t border-gray-300"></div>
+            </div>
+            <div class="relative flex justify-center">
+                <span class="bg-white px-2 text-sm text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="mx-auto size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                    </svg>
+                    Love
+                </span>
+            </div>
+        </div>
+    </div>
+</Container>

@@ -1,0 +1,5 @@
+[
+  "./../D8S.W0007.R000/Components/**/*.razor",
+  "./Components/**/*.razor",
+  "./Routes/**/*.razor"
+]

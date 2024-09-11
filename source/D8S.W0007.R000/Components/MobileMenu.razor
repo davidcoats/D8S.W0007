@@ -1,0 +1,87 @@
+
+@rendermode InteractiveWebAssembly
+
+@inject NavigationManager NavigationManager
+
+<!-- Mobile menu, show/hide based on menu open state. -->
+<div class="@this.Css" role="dialog" aria-modal="true">
+    <!-- Background backdrop, show/hide based on slide-over state. -->
+    <div class="fixed inset-0 z-10"></div>
+    <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-between">
+            <a href="@IPageRoutes.Home" class="-m-1.5 p-1.5">
+                <span class="font-normal">Riya and Vedant</span>
+                @* <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt=""> *@
+            </a>
+            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700"
+                @onclick=this.On_MobileMenuButtonClick>
+                <span class="sr-only">Close menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                    <a href="@IPageRoutes.OurStory" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Our Story</a>
+                    <a href="@IPageRoutes.Schedule" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Schedule</a>
+                    <a href="@IPageRoutes.Location" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Location</a>
+                    <a href="@IPageRoutes.RSVP" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">RSVP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code{
+    /// <summary>
+    /// Documentation will not appear for this component in consumer Razor files unless there is some sort of documentation in the Razor markup.
+    /// Documentation for the component is in the code-behind file.
+    /// </summary>
+    [Parameter]
+    public string DummyDocumentationParameter { get; set; }
+
+    private const string BaseCss = "lg:hidden";
+
+    private string Css { get; set; } = MobileMenu.BaseCss + " " + "hidden";
+
+
+    private bool Visible { get; set; } = false;
+
+    private void On_MobileMenuButtonClick()
+    {
+        this.Toggle();
+    }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        this.NavigationManager.LocationChanged += new EventHandler<LocationChangedEventArgs>((_, _) =>
+        {
+            this.Css = MobileMenu.BaseCss + " " + "hidden";
+
+            this.Visible = false;
+
+            this.StateHasChanged();
+        });
+    }
+
+    public void Toggle()
+    {
+        this.Visible = !this.Visible;
+
+        if (this.Visible)
+        {
+            this.Css = MobileMenu.BaseCss;
+        }
+        else
+        {
+            this.Css = MobileMenu.BaseCss + " " + "hidden";
+        }
+
+        this.StateHasChanged();
+    }
+}

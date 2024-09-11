@@ -1,0 +1,66 @@
+
+<PageTitle>@Instances.PageTitles.For_RSVP</PageTitle>
+
+<Container>
+    <div class="relative isolate overflow-hidden px-6 py-32 lg:py-64 rounded">
+        <img src="@Instances.Urls.Image_RSVP_Banner" alt="" class="mx-auto absolute inset-0 -z-10 h-full object-cover">
+    </div>
+
+    <div class="font-light">
+        <p class="mt-8">
+            We hope that you will be able to celebrate with us in Jaipur.
+        </p>
+        <p class="mt-4">
+            <span class="font-semibold">Even if you cannot make it</span>, a response to our quick survey would be appreciated.
+        </p>
+    </div>
+
+    <div class="mt-8 mb-16">
+        <style>
+            .google-form {
+                position: relative;
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+            }
+
+            .google-form iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100% !important;
+                height: 100% !important;
+                border: 0;
+            }
+        </style>
+        <div class="pt-[2000px] lg:pt-[1600px] google-form">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfbLJIdp7qpkLVrxOcGBYEO1HB91I5D6wA0G2BuroXY6fPcYw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </div>
+
+    <div class="pt-16 pb-6">
+        <div class="relative">
+            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                <div class="w-full border-t border-gray-300"></div>
+            </div>
+            <div class="relative flex justify-center">
+                <span class="bg-white px-2 text-sm text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="mx-auto size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                    </svg>
+                    Devotion
+                </span>
+            </div>
+        </div>
+    </div>
+</Container>
+
+
+@code{
+    /// <summary>
+    /// Documentation will not appear for this component in consumer Razor files unless there is some sort of documentation in the Razor markup.
+    /// Documentation for the component is in the code-behind file.
+    /// </summary>
+    [Parameter]
+    public string DummyDocumentationParameter { get; set; }
+}
