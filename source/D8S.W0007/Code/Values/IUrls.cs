@@ -1,6 +1,7 @@
 using System;
 
 using R5T.T0131;
+using R5T.T0143;
 
 
 namespace D8S.W0007
@@ -9,7 +10,10 @@ namespace D8S.W0007
     public partial interface IUrls : IValuesMarker
     {
 #pragma warning disable IDE1006 // Naming Styles
+
+        [Ignore]
         public Raw.IUrls _Raw => Raw.Urls.Instance;
+
 #pragma warning restore IDE1006 // Naming Styles
 
 
