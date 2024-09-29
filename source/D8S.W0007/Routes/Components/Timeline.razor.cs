@@ -11,8 +11,8 @@ namespace D8S.W0007.Routes.Components
     /// Put class documentation here (leaving the dummy documentation in the Razor file so that this documentation will appear for the component in client Razor files).
     /// </summary>
     [RazorComponentMarker]
-    [Route(IPageRoutes.Schedule)]
-    public partial class Schedule : IRazorComponentMarker
+    [Route(IPageRoutes.WeddingTimeline)]
+    public partial class Timeline : IRazorComponentMarker
     {
 
     }

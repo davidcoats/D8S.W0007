@@ -888,10 +888,6 @@ video {
   border-radius: 1rem;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -952,24 +948,9 @@ video {
      object-position: 50% 40%;
 }
 
-.object-bottom {
-  -o-object-position: bottom;
-     object-position: bottom;
-}
-
-.object-\[50\%_50\%\] {
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
-}
-
 .object-\[50\%_75\%\] {
   -o-object-position: 50% 75%;
      object-position: 50% 75%;
-}
-
-.object-\[50\%_80\%\] {
-  -o-object-position: 50% 80%;
-     object-position: 50% 80%;
 }
 
 .p-1\.5 {
@@ -1069,11 +1050,6 @@ video {
 
 .text-center {
   text-align: center;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-3xl {
@@ -1201,11 +1177,6 @@ video {
   --tw-ring-color: rgb(17 24 39 / 0.1);
 }
 
-.hover\:bg-gray-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-gray-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -1223,6 +1194,11 @@ video {
 
   .sm\:max-w-sm {
     max-width: 24rem;
+  }
+
+  .sm\:object-\[50\%_60\%\] {
+    -o-object-position: 50% 60%;
+       object-position: 50% 60%;
   }
 
   .sm\:p-6 {
@@ -1353,11 +1329,6 @@ video {
     margin-bottom: calc(5rem * var(--tw-space-y-reverse));
   }
 
-  .lg\:object-top {
-    -o-object-position: top;
-       object-position: top;
-  }
-
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1392,11 +1363,6 @@ video {
 
   .lg\:pt-\[1600px\] {
     padding-top: 1600px;
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .lg\:text-4xl {

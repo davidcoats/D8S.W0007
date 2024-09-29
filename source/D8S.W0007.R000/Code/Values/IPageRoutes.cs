@@ -4,6 +4,7 @@ using R5T.T0131;
 using R5T.T0143;
 
 
+#pragma warning disable IDE0130
 namespace D8S.W0007.R000
 {
     [ValuesMarker]
@@ -26,9 +27,9 @@ namespace D8S.W0007.R000
         public const string OurStory = "/our-story";
 
         /// <summary>
-        /// <para><value>/schedule</value></para>
+        /// <para><value>/wedding-timeime</value></para>
         /// </summary>
-        public const string Schedule = "/schedule";
+        public const string WeddingTimeline = "/wedding-timeline";
 
         /// <summary>
         /// <para><value>/location</value></para>

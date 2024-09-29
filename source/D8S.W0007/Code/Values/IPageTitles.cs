@@ -4,6 +4,7 @@ using R5T.T0131;
 using R5T.T0143;
 
 
+#pragma warning disable IDE0130
 namespace D8S.W0007
 {
     [ValuesMarker]
@@ -17,27 +18,27 @@ namespace D8S.W0007
 #pragma warning restore IDE1006 // Naming Styles
 
 
-        /// <inheritdoc cref="Raw.IPageTitles.Riya_and_Vedu"/>
-        public string For_Home => _Raw.Riya_and_Vedu;
+        /// <inheritdoc cref="Raw.IPageTitles.Riya_and_Vedant"/>
+        public string For_Home => _Raw.Riya_and_Vedant;
 
         /// <summary>
-        /// <para><value>Our Story</value></para>
+        /// <para><value>Riya and Vedant - Our Story</value></para>
         /// </summary>
-        public string For_OurStory => $"{_Raw.Riya_and_Vedu} - Our Story";
+        public string For_OurStory => $"{_Raw.Riya_and_Vedant} - Our Story";
 
         /// <summary>
-        /// <para><value>Schedule</value></para>
+        /// <para><value>Riya and Vedant - Timeline</value></para>
         /// </summary>
-        public string For_Schedule => $"{_Raw.Riya_and_Vedu} - Schedule";
+        public string For_Timeline => $"{_Raw.Riya_and_Vedant} - Timeline";
 
         /// <summary>
-        /// <para><value>Location</value></para>
+        /// <para><value>Riya and Vedant - Location</value></para>
         /// </summary>
-        public string For_Location => $"{_Raw.Riya_and_Vedu} - Location";
+        public string For_Location => $"{_Raw.Riya_and_Vedant} - Location";
 
         /// <summary>
-        /// <para><value>RSVP</value></para>
+        /// <para><value>Riya and Vedant - RSVP</value></para>
         /// </summary>
-        public string For_RSVP => $"{_Raw.Riya_and_Vedu} - RSVP";
+        public string For_RSVP => $"{_Raw.Riya_and_Vedant} - RSVP";
     }
 }

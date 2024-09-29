@@ -4,6 +4,7 @@ using R5T.T0131;
 using R5T.T0143;
 
 
+#pragma warning disable IDE0130 // Namespace does not match folder structure
 namespace D8S.W0007
 {
     [ValuesMarker]
@@ -158,5 +159,11 @@ namespace D8S.W0007
 
         /// <inheritdoc cref="Raw.IUrls.N_042"/>
         public string Image_ForLocation_Venue => _Raw.N_042;
+
+        /// <inheritdoc cref="Raw.IUrls.N_048"/>
+        public string Image_ForTimeline_Banner => _Raw.N_048;
+
+        /// <inheritdoc cref="Raw.IUrls.N_049"/>
+        public string Image_ForMainPage_Timeline => _Raw.N_049;
     }
 }

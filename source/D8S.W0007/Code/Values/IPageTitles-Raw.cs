@@ -11,6 +11,6 @@ namespace D8S.W0007.Raw
         /// <summary>
         /// <para><value>Riya and Vedant</value></para>
         /// </summary>
-        public string Riya_and_Vedu => "Riya and Vedant";
+        public string Riya_and_Vedant => "Riya and Vedant";
     }
 }

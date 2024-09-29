@@ -9,7 +9,7 @@
       "applicationUrl": "https://localhost:55340;http://localhost:55341",
       "dotnetRunMessages": true,
       "inspectUri": "{wsProtocol}://{url.hostname}:{url.port}/_framework/debug/ws-proxy?browser={browserInspectUri}",
-      "launchUrl": "rsvp"
+      "launchUrl": ""
     }
   }
 }

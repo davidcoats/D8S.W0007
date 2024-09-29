@@ -3,6 +3,7 @@ using System;
 using R5T.T0131;
 
 
+#pragma warning disable IDE0130 // Namespace does not match folder structure
 namespace D8S.W0007.Raw
 {
     [ValuesMarker]
@@ -244,5 +245,20 @@ namespace D8S.W0007.Raw
         /// <para><value>https://s3.us-west-1.amazonaws.com/public.bucket.8acc798b-9220-4d85-9a78-551f46ec1dd2/Riya-And-Vedant-Wedding/Website-Images/RSVP-Banner.jpg</value></para>
         /// </summary>
         public string N_047 => "https://s3.us-west-1.amazonaws.com/public.bucket.8acc798b-9220-4d85-9a78-551f46ec1dd2/Riya-And-Vedant-Wedding/Website-Images/RSVP-Banner.jpg";
+
+        /// <summary>
+        /// <para><value>https://s3.us-west-1.amazonaws.com/public.bucket.8acc798b-9220-4d85-9a78-551f46ec1dd2/Riya-And-Vedant-Wedding/Website-Images/Timeline-Banner.jpg</value></para>
+        /// </summary>
+        public string N_048 => "https://s3.us-west-1.amazonaws.com/public.bucket.8acc798b-9220-4d85-9a78-551f46ec1dd2/Riya-And-Vedant-Wedding/Website-Images/Timeline-Banner.jpg";
+
+        /// <summary>
+        /// <para><value>https://s3.us-west-1.amazonaws.com/public.bucket.8acc798b-9220-4d85-9a78-551f46ec1dd2/Riya-And-Vedant-Wedding/Website-Images/Main_Timeline.jpg</value></para>
+        /// </summary>
+        public string N_049 => "https://s3.us-west-1.amazonaws.com/public.bucket.8acc798b-9220-4d85-9a78-551f46ec1dd2/Riya-And-Vedant-Wedding/Website-Images/Main_Timeline.jpg";
+
+        /// <summary>
+        /// <para><value></value></para>
+        /// </summary>
+        public string N_ => "";
     }
 }
